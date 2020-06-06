@@ -1,0 +1,13 @@
+
+f=open("emotion_words2.txt","r")
+read=f.readlines()
+total=[]
+for line in read:
+    #print(line)
+    words=line.split()
+    for word in words:
+        #print(word)
+        total.append(word)
+tot=' '.join(total)
+first_forty=tot[0:40]
+print(first_forty)
